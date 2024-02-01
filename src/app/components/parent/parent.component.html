@@ -1,0 +1,12 @@
+<div [ngSwitch]="enfant">
+  <!-- Affiche enfant 1 -->
+  <app-enfant1
+    [param]="myParamEnfant1"
+    *ngSwitchCase="Enfants.Enfant1"
+  ></app-enfant1>
+  <!-- Affiche enfant 2 -->
+  <app-enfant2
+    [param]="myParamEnfant2"
+    *ngSwitchCase="Enfants.Enfant2"
+  ></app-enfant2>
+</div>
